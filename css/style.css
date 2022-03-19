@@ -4,7 +4,8 @@
   --dark-color: #323642;
   --green-color: #4CB649;
   --gray-color: #707070;
-  --red-color: #F24458; }
+  --red-color: #F24458;
+  --orange-color: #FF8D00; }
 
 *,
 *::after,
@@ -48,7 +49,7 @@ body {
 
 .cards {
   display: flex;
-  column-gap: 20px; }
+  column-gap: 30px; }
   .cards__item {
     padding: 47px 85px 40px 85px;
     display: flex;
@@ -56,7 +57,15 @@ body {
     align-items: center;
     background-color: #fff;
     border: 1px solid #70707030;
-    border-radius: 6px; }
+    border-radius: 6px;
+    transition: all .3s ease-in-out; }
+    .cards__item:hover {
+      border: 4px solid var(--orange-color);
+      transform: scale(1.1); }
+      .cards__item:hover .cards__btn {
+        color: #fff;
+        background-color: var(--orange-color);
+        border: transparent; }
   .cards__time {
     margin-bottom: 22px;
     position: relative;
@@ -84,7 +93,7 @@ body {
       position: absolute;
       bottom: -15px;
       right: -50px;
-      background-color: var(--gray-color); }
+      background-color: #70707029; }
   .cards__currency {
     position: absolute;
     left: -15px;
@@ -107,7 +116,8 @@ body {
     color: var(--green-color);
     border: 1px solid var(--green-color);
     border-radius: 20px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    transition: background-color .3s ease-in-out, color .3s ease-in-out, border .3s ease-in-out; }
 
 .red_color {
   color: var(--red-color); }
