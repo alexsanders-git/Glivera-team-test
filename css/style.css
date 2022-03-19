@@ -1,0 +1,113 @@
+:root {
+  --gray-bg-color: #F7F7F7;
+  --black-color: #22252E;
+  --dark-color: #323642;
+  --green-color: #4CB649;
+  --gray-color: #707070;
+  --red-color: #F24458; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: var(--black-color);
+  background-color: var(--gray-bg-color); }
+
+.container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.pricings {
+  padding: 154px 0 100px 0; }
+  .pricings__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .pricings__title {
+    margin-bottom: 60px;
+    font-size: 56px;
+    font-weight: 300; }
+  .pricings__step {
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: var(--green-color); }
+  .pricings__suptitle {
+    margin-bottom: 55px;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1.35; }
+
+.cards {
+  display: flex;
+  column-gap: 20px; }
+  .cards__item {
+    padding: 47px 85px 40px 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #70707030;
+    border-radius: 6px; }
+  .cards__time {
+    margin-bottom: 22px;
+    position: relative;
+    text-transform: uppercase;
+    color: var(--dark-color); }
+    .cards__time::after {
+      content: '';
+      width: 24px;
+      height: 2px;
+      position: absolute;
+      top: 25px;
+      left: 20px;
+      background-color: var(--green-color); }
+  .cards__price {
+    margin-bottom: 45px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 24px;
+    font-weight: 300; }
+    .cards__price::after {
+      content: '';
+      width: 200px;
+      height: 1px;
+      position: absolute;
+      bottom: -15px;
+      right: -50px;
+      background-color: var(--gray-color); }
+  .cards__currency {
+    position: absolute;
+    left: -15px;
+    top: 10px; }
+  .cards__value {
+    font-size: 56px; }
+  .cards__duration {
+    position: absolute;
+    bottom: 10px;
+    right: -50px; }
+  .cards__description {
+    margin-bottom: 32px;
+    max-width: 200px;
+    text-align: center;
+    line-height: 1.6; }
+  .cards__btn {
+    padding: 10px 62px;
+    background: none;
+    font-weight: 500;
+    color: var(--green-color);
+    border: 1px solid var(--green-color);
+    border-radius: 20px;
+    text-transform: uppercase; }
+
+.red_color {
+  color: var(--red-color); }
